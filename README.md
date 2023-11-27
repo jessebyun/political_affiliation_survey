@@ -22,7 +22,7 @@ The program iterates over each question, displaying it along with the answer opt
 After each question, the program checks if it's at one of the 'GUESS_POINTS' using the 'shouldMakeGuess()' method. If yes, it calculates the average score and makes an early guess about the political affiliation using 'getPoliticalAffiliationGuess()' method. If a guess is made (i.e., not "Undetermined"), it breaks out of the loop. The program will make an early guess on user's political affiliation if the responses is in favor to one political affiliation from the total score exceeding thresholds. 
 
 <h4>Final Guess:</h4>
-If no early guess is made, after all questions, it calculates the average score based on all 20 questions and makes a final guess.
+If no early guess is made, after iterating through all questions and 'guessed' boolean being false, it calculates the average score based on all 20 questions and makes a final guess.
 
 <h4>User's Actual Affiliation:</h4>
 It then prompts the user to enter their actual political affiliation for survey purposes.
